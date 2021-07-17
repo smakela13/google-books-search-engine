@@ -8,7 +8,7 @@ const typeDefs = gql`
 		bookId: ID!
 		image: String
 		link: String
-		title: String!
+		title: String
 	}
 
 	type User {

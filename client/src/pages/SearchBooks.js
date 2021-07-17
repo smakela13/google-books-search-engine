@@ -3,9 +3,7 @@ import {Jumbotron, Container, Col, Form, Button, Card, CardColumns} from 'react-
 import {useMutation} from '@apollo/client';
 import {SAVE_BOOK} from '../utils/mutations';
 import {searchGoogleBooks} from '../utils/API';
-
 import Auth from '../utils/auth';
-import { saveBook, searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 
 const SearchBooks = () => {
@@ -14,7 +12,7 @@ const SearchBooks = () => {
   const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
   const [saveBook, {error, data}] = useMutation(SAVE_BOOK);
 
-  useEffect(() => {
+	useEffect(() => {
     return () => saveBookIds(savedBookIds);
   });
 
@@ -59,12 +57,8 @@ const SearchBooks = () => {
 
     try {
       const {data} = await saveBook({
-        variables: {bookToSave, token},
+        variables: {input: bookToSave},
       });
-
-      if (!response.ok) {
-        throw new Error('something went wrong!');
-      }
 
       setSavedBookIds([...savedBookIds, bookToSave.bookId]);
     } catch (err) {

@@ -10,7 +10,7 @@ const SavedBooks = () => {
   const {loading, error, data, refetch} = useQuery(GET_ME);
 
   useEffect(() => {
-    refetch()
+    refetch();
   }, [refetch]);
 
   const userData = data?.me;
@@ -26,9 +26,9 @@ const SavedBooks = () => {
     try {
       const {data} = await removeBook({
         variables: {bookId},
-      })
+      });
       removeBookId(bookId);
-      refetch()
+			refetch();
     } catch (error) {
       console.log(error);
     }
