@@ -38,7 +38,7 @@ npm run develop
 
 A user can search for their favorite books.
 
-![Google Books Search](./assets/google-books-saved-screenshots.png)
+![Google Books Search](./assets/google-books-saved-screenshot.png)
 
 The user can save any books they might find interesting.
 
