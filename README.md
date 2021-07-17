@@ -15,7 +15,6 @@ Finding new books has never been easier!
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Wireframe](#wireframe)
 * [Credits](#credits)
 * [License](#license)
 
