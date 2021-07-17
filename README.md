@@ -29,7 +29,8 @@ You'll need to host the application on your MongoDB Atlas account.
 
 To run the application locally, type the following:
 ```md
-npm run develop```
+npm run develop
+```
 
 ## Usage
 
