@@ -45,7 +45,7 @@ Navigate to [Google Books Search Engine](https://intense-woodland-01867.herokuap
 
 ## Credits
 
-Created by [Soma Makela](https://github.com/smakela13).
+Created by [Soma Mäkelä](https://github.com/smakela13).
 
 ## License
 
